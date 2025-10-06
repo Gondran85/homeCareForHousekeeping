@@ -132,6 +132,23 @@
     <!-- Common -->
     <string name="today">Today</string>
     <string name="week_of">Week of %1$s</string>
+    <string name="change_week">Change Week</string>
+    <string name="select_week">Select Week</string>
+    <string name="this_week">This Week</string>
+    <string name="previous_week">Previous</string>
+    <string name="next_week">Next</string>
+    <string name="week_selected">Week selected</string>
+    <string name="cancel">Cancel</string>
+    <string name="add_photo">Add Photo</string>
+    <string name="photo_count">%1$d photos</string>
+    <string name="remove_photo">Remove photo</string>
+    <string name="select_photo_source">Select Photo Source</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="photo_too_large">Photo is too large (max 10MB)</string>
+    <string name="photo_upload_error">Error uploading photo</string>
+    <string name="photo_removed">Photo removed</string>
+    <string name="max_photos_reached">Maximum 5 photos per meal</string>
 
     <!-- Shopping summary strings -->
     <string name="total_items_format">Total: %1$d</string>

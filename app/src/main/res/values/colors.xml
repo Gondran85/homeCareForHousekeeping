@@ -1,31 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <!-- Primary colors -->
+    <color name="primary">#6200EE</color>
+    <color name="primary_variant">#3700B3</color>
+    <color name="secondary">#03DAC6</color>
+    <color name="secondary_variant">#018786</color>
 
-    <!-- App Color Palette -->
-    <color name="primary">#5C4DB1</color>
-    <color name="primary_variant">#7B68EE</color>
-    <color name="secondary">#FFB67E</color>
-    <color name="secondary_variant">#DC4F89</color>
+    <!-- Background colors -->
+    <color name="background_light">#FAFAFA</color>
+    <color name="white">#FFFFFF</color>
 
-    <!-- Background Colors -->
-    <color name="background_light">#FDF9F4</color>
-    <color name="sky_blue">#A7D4FF</color>
-    <color name="mint_green">#B6E2A1</color>
-    <color name="soft_orange">#FFB67E</color>
-    <color name="light_purple">#DFDFFF</color>
+    <!-- Gray scale colors -->
+    <color name="gray_200">#EEEEEE</color>
+    <color name="gray_500">#9E9E9E</color>
+    <color name="gray_600">#757575</color>
+    <color name="gray_700">#616161</color>
+    <color name="gray_800">#424242</color>
 
-    <!-- Status Colors -->
+    <!-- Theme colors -->
+    <color name="mint_green">#E8F5E8</color>
+    <color name="soft_orange">#FFF3E0</color>
+    <color name="sky_blue">#E3F2FD</color>
+    <color name="light_purple">#F3E5F5</color>
     <color name="success">#4CAF50</color>
     <color name="warning">#FF9800</color>
     <color name="error">#F44336</color>
-
-    <!-- Gray Shades -->
-    <color name="gray_50">#FAFAFA</color>
-    <color name="gray_100">#F5F5F5</color>
-    <color name="gray_200">#EEEEEE</color>
-    <color name="gray_300">#E0E0E0</color>
-    <color name="gray_600">#757575</color>
-    <color name="gray_800">#424242</color>
 </resources>
