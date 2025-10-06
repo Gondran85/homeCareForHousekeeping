@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_light"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Header -->
+        <com.google.android.material.card.MaterialCardView
+            style="@style/TaskCardStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardBackgroundColor="@color/sky_blue">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/daily_jobs_title"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/gray_800"
+                    android:fontFamily="sans-serif-medium" />
+
+                <TextView
+                    android:id="@+id/dateTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Today"
+                    android:textSize="14sp"
+                    android:textColor="@color/gray_600"
+                    android:layout_marginTop="4dp" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Morning Tasks Section -->
+        <com.google.android.material.card.MaterialCardView
+            style="@style/TaskCardStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/SectionHeaderStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/morning_tasks"
+                    android:background="@color/mint_green"
+                    android:drawableStart="@android:drawable/ic_menu_day"
+                    android:drawablePadding="8dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <CheckBox
+                        android:id="@+id/cbPrepareBreakfast"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/task_prepare_breakfast"
+                        android:textSize="16sp"
+                        android:padding="8dp" />
+
+                    <CheckBox
+                        android:id="@+id/cbGetKidsReady"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/task_get_kids_ready"
+                        android:textSize="16sp"
+                        android:padding="8dp" />
+
+                    <CheckBox
+                        android:id="@+id/cbSchoolDropoff"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/task_school_dropoff"
+                        android:textSize="16sp"
+                        android:padding="8dp" />
+
+                    <CheckBox
+                        android:id="@+id/cbTidyKitchen"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/task_tidy_kitchen"
+                        android:textSize="16sp"
+                        android:padding="8dp" />
+
+                    <CheckBox
+                        android:id="@+id/cbMakeBeds"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/task_make_beds"
+                        android:textSize="16sp"
+                        android:padding="8dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Daytime Tasks Section -->
+        <com.google.android.material.card.MaterialCardView
+            style="@style/TaskCardStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/SectionHeaderStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/daytime_tasks"
+                    android:background="@color/soft_orange"
+                    android:drawableStart="@android:drawable/ic_menu_preferences"
+                    android:drawablePadding="8dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <CheckBox
+                        android:id="@+id/cbCleanLivingRoom"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/task_clean_living_room"
+                        android:textSize="16sp"
+                        android:padding="8dp" />
+
+                    <CheckBox
+                        android:id="@+id/cbMopVacuum"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/task_mop_vacuum"
+                        android:textSize="16sp"
+                        android:padding="8dp" />
+
+                    <CheckBox
+                        android:id="@+id/cbLaundry"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/task_laundry"
+                        android:textSize="16sp"
+                        android:padding="8dp" />
+
+                    <CheckBox
+                        android:id="@+id/cbCleanBathrooms"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/task_clean_bathrooms"
+                        android:textSize="16sp"
+                        android:padding="8dp" />
+
+                    <CheckBox
+                        android:id="@+id/cbWaterPlants"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/task_water_plants"
+                        android:textSize="16sp"
+                        android:padding="8dp" />
+
+                    <CheckBox
+                        android:id="@+id/cbOrganizeToys"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/task_organize_toys"
+                        android:textSize="16sp"
+                        android:padding="8dp" />
+
+                    <CheckBox
+                        android:id="@+id/cbPrepareLunchDinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/task_prepare_lunch_dinner"
+                        android:textSize="16sp"
+                        android:padding="8dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Afternoon Tasks Section -->
+        <com.google.android.material.card.MaterialCardView
+            style="@style/TaskCardStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/SectionHeaderStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/afternoon_tasks"
+                    android:background="@color/secondary_variant"
+                    android:textColor="@color/white"
+                    android:drawableStart="@android:drawable/ic_menu_recent_history"
+                    android:drawablePadding="8dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <CheckBox
+                        android:id="@+id/cbSchoolPickup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/task_school_pickup"
+                        android:textSize="16sp"
+                        android:padding="8dp" />
+
+                    <CheckBox
+                        android:id="@+id/cbServeSnacks"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/task_serve_snacks"
+                        android:textSize="16sp"
+                        android:padding="8dp" />
+
+                    <CheckBox
+                        android:id="@+id/cbKidsPlaytime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/task_kids_playtime"
+                        android:textSize="16sp"
+                        android:padding="8dp" />
+
+                    <CheckBox
+                        android:id="@+id/cbReadingTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/task_reading_time"
+                        android:textSize="16sp"
+                        android:padding="8dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Evening Tasks Section -->
+        <com.google.android.material.card.MaterialCardView
+            style="@style/TaskCardStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/SectionHeaderStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/evening_tasks"
+                    android:background="@color/light_purple"
+                    android:drawableStart="@android:drawable/ic_menu_view"
+                    android:drawablePadding="8dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <CheckBox
+                        android:id="@+id/cbDinnerPrep"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/task_dinner_prep"
+                        android:textSize="16sp"
+                        android:padding="8dp" />
+
+                    <CheckBox
+                        android:id="@+id/cbBathBedtime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/task_bath_bedtime"
+                        android:textSize="16sp"
+                        android:padding="8dp" />
+
+                    <CheckBox
+                        android:id="@+id/cbPrepareUniforms"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/task_prepare_uniforms"
+                        android:textSize="16sp"
+                        android:padding="8dp" />
+
+                    <CheckBox
+                        android:id="@+id/cbQuickTidyup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/task_quick_tidyup"
+                        android:textSize="16sp"
+                        android:padding="8dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Action Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:gravity="center">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnMarkAllDone"
+                style="@style/RoundedButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:text="@string/mark_all_done"
+                android:backgroundTint="@color/success" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fabAddTask"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/add_new_task"
+                android:src="@android:drawable/ic_input_add"
+                app:tint="@color/white"
+                app:backgroundTint="@color/primary" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

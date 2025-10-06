@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/dailyJobsFragment">
+
+    <fragment
+        android:id="@+id/dailyJobsFragment"
+        android:name="com.jeffersongondran.home_care_housekeeping.DailyJobsFragment"
+        android:label="@string/daily_jobs_title"
+        tools:layout="@layout/fragment_daily_jobs" />
+
+    <fragment
+        android:id="@+id/foodPlanFragment"
+        android:name="com.jeffersongondran.home_care_housekeeping.FoodPlanFragment"
+        android:label="@string/food_plan_title"
+        tools:layout="@layout/fragment_food_plan" />
+
+    <fragment
+        android:id="@+id/shoppingListFragment"
+        android:name="com.jeffersongondran.home_care_housekeeping.ShoppingListFragment"
+        android:label="@string/shopping_list_title"
+        tools:layout="@layout/fragment_shopping_list" />
+
+</navigation>
