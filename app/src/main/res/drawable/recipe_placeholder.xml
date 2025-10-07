@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="150dp"
+    android:height="100dp"
+    android:viewportWidth="150"
+    android:viewportHeight="100">
+
+    <!-- Background rectangle -->
+    <path
+        android:fillColor="@color/gray_300"
+        android:pathData="M0,0h150v100h-150z"/>
+
+    <!-- Recipe icon -->
+    <path
+        android:fillColor="@color/gray_500"
+        android:pathData="M65,30h20a4,4 0,0 1,4 4v10a4,4 0,0 1,-4 4H65a4,4 0,0 1,-4 -4V34a4,4 0,0 1,4 -4zM65,34h20v10H65V34zM100,30v40a4,4 0,0 1,-4 4H54a4,4 0,0 1,-4 -4V30a4,4 0,0 1,4 -4h42a4,4 0,0 1,4 4zM96,30H54v40h42V30zM85,65L75,58L70,62L65,58L60,62v5h36v-2L90,60L85,65z"/>
+</vector>

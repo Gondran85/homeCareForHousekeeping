@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Available Ingredients"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/gray_800"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose ingredients you have available to get recipe suggestions"
+        android:textSize="14sp"
+        android:textColor="@color/gray_600"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Search bar -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        app:boxStrokeColor="@color/mint_green"
+        app:hintTextColor="@color/mint_green">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etSearchIngredients"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Search ingredients..."
+            android:drawableStart="@drawable/ic_search"
+            android:drawablePadding="8dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Selected ingredients counter -->
+    <TextView
+        android:id="@+id/tvSelectedCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0 ingredients selected"
+        android:textSize="12sp"
+        android:textColor="@color/mint_green"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Ingredients RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvIngredients"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Action buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnClearAll"
+            style="@style/Widget.Material3.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clear All"
+            android:textColor="@color/gray_600"
+            android:layout_marginEnd="8dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCancel"
+            style="@style/Widget.Material3.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:textColor="@color/gray_600"
+            android:layout_marginEnd="8dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnGetSuggestions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Get Suggestions"
+            android:backgroundTint="@color/mint_green"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -8,10 +8,14 @@ import android.provider.MediaStore
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.EditText
+import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.jeffersongondran.home_care_housekeeping.data.model.*
+import com.jeffersongondran.home_care_housekeeping.data.repository.RecipeRepository
 import com.jeffersongondran.home_care_housekeeping.databinding.FragmentFoodPlanBinding
 import com.jeffersongondran.home_care_housekeeping.databinding.DialogWeekSelectionBinding
 import java.io.File
@@ -25,6 +29,7 @@ class FoodPlanFragment : Fragment() {
 
     private var currentSelectedWeek = Calendar.getInstance()
     private lateinit var weekSelectionAdapter: WeekSelectionAdapter
+    private lateinit var recipeRepository: RecipeRepository
 
     // Photo adapters for each day
     private lateinit var mondayPhotoAdapter: PhotoAdapter
@@ -62,9 +67,11 @@ class FoodPlanFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        recipeRepository = RecipeRepository()
         setupUI()
         setupClickListeners()
         setupPhotoAdapters()
+        setupRecipeIdeasButtons()
     }
 
     private fun setupUI() {
@@ -117,12 +124,150 @@ class FoodPlanFragment : Fragment() {
         }
 
         binding.fabAddRecipe.setOnClickListener {
-            android.widget.Toast.makeText(
-                requireContext(),
-                "Add Recipe feature coming soon!",
-                android.widget.Toast.LENGTH_SHORT
-            ).show()
+            showRecipeSuggestionDialog(null) { recipe ->
+                // Handle adding recipe to a general list or show options for which meal to add it to
+                Toast.makeText(
+                    requireContext(),
+                    "Select a specific meal to add ${recipe.name}",
+                    Toast.LENGTH_SHORT
+                ).show()
+            }
         }
+    }
+
+    private fun setupRecipeIdeasButtons() {
+        // Monday recipe idea buttons
+        binding.btnMondayBreakfastIdeas.setOnClickListener {
+            showRecipeSuggestionDialog(MealCategory.BREAKFAST) { recipe ->
+                binding.etMondayBreakfast.setText(recipe.name)
+            }
+        }
+
+        binding.btnMondayLunchIdeas.setOnClickListener {
+            showRecipeSuggestionDialog(MealCategory.LUNCH) { recipe ->
+                binding.etMondayLunch.setText(recipe.name)
+            }
+        }
+
+        binding.btnMondayDinnerIdeas.setOnClickListener {
+            showRecipeSuggestionDialog(MealCategory.DINNER) { recipe ->
+                binding.etMondayDinner.setText(recipe.name)
+            }
+        }
+
+        binding.btnMondaySnacksIdeas.setOnClickListener {
+            showRecipeSuggestionDialog(MealCategory.SNACKS) { recipe ->
+                binding.etMondaySnacks.setText(recipe.name)
+            }
+        }
+
+        // Tuesday recipe idea buttons
+        binding.btnTuesdayBreakfastIdeas.setOnClickListener {
+            showRecipeSuggestionDialog(MealCategory.BREAKFAST) { recipe ->
+                binding.etTuesdayBreakfast.setText(recipe.name)
+            }
+        }
+
+        binding.btnTuesdayLunchIdeas.setOnClickListener {
+            showRecipeSuggestionDialog(MealCategory.LUNCH) { recipe ->
+                binding.etTuesdayLunch.setText(recipe.name)
+            }
+        }
+
+        binding.btnTuesdayDinnerIdeas.setOnClickListener {
+            showRecipeSuggestionDialog(MealCategory.DINNER) { recipe ->
+                binding.etTuesdayDinner.setText(recipe.name)
+            }
+        }
+
+        binding.btnTuesdaySnacksIdeas.setOnClickListener {
+            showRecipeSuggestionDialog(MealCategory.SNACKS) { recipe ->
+                binding.etTuesdaySnacks.setText(recipe.name)
+            }
+        }
+
+        // Wednesday recipe idea buttons
+        binding.btnWednesdayBreakfastIdeas.setOnClickListener {
+            showRecipeSuggestionDialog(MealCategory.BREAKFAST) { recipe ->
+                binding.etWednesdayBreakfast.setText(recipe.name)
+            }
+        }
+
+        binding.btnWednesdayLunchIdeas.setOnClickListener {
+            showRecipeSuggestionDialog(MealCategory.LUNCH) { recipe ->
+                binding.etWednesdayLunch.setText(recipe.name)
+            }
+        }
+
+        binding.btnWednesdayDinnerIdeas.setOnClickListener {
+            showRecipeSuggestionDialog(MealCategory.DINNER) { recipe ->
+                binding.etWednesdayDinner.setText(recipe.name)
+            }
+        }
+
+        binding.btnWednesdaySnacksIdeas.setOnClickListener {
+            showRecipeSuggestionDialog(MealCategory.SNACKS) { recipe ->
+                binding.etWednesdaySnacks.setText(recipe.name)
+            }
+        }
+
+        // Thursday recipe idea buttons
+        binding.btnThursdayBreakfastIdeas.setOnClickListener {
+            showRecipeSuggestionDialog(MealCategory.BREAKFAST) { recipe ->
+                binding.etThursdayBreakfast.setText(recipe.name)
+            }
+        }
+
+        binding.btnThursdayLunchIdeas.setOnClickListener {
+            showRecipeSuggestionDialog(MealCategory.LUNCH) { recipe ->
+                binding.etThursdayLunch.setText(recipe.name)
+            }
+        }
+
+        binding.btnThursdayDinnerIdeas.setOnClickListener {
+            showRecipeSuggestionDialog(MealCategory.DINNER) { recipe ->
+                binding.etThursdayDinner.setText(recipe.name)
+            }
+        }
+
+        binding.btnThursdaySnacksIdeas.setOnClickListener {
+            showRecipeSuggestionDialog(MealCategory.SNACKS) { recipe ->
+                binding.etThursdaySnacks.setText(recipe.name)
+            }
+        }
+
+        // Friday recipe idea buttons
+        binding.btnFridayBreakfastIdeas.setOnClickListener {
+            showRecipeSuggestionDialog(MealCategory.BREAKFAST) { recipe ->
+                binding.etFridayBreakfast.setText(recipe.name)
+            }
+        }
+
+        binding.btnFridayLunchIdeas.setOnClickListener {
+            showRecipeSuggestionDialog(MealCategory.LUNCH) { recipe ->
+                binding.etFridayLunch.setText(recipe.name)
+            }
+        }
+
+        binding.btnFridayDinnerIdeas.setOnClickListener {
+            showRecipeSuggestionDialog(MealCategory.DINNER) { recipe ->
+                binding.etFridayDinner.setText(recipe.name)
+            }
+        }
+
+        binding.btnFridaySnacksIdeas.setOnClickListener {
+            showRecipeSuggestionDialog(MealCategory.SNACKS) { recipe ->
+                binding.etFridaySnacks.setText(recipe.name)
+            }
+        }
+    }
+
+    private fun showRecipeSuggestionDialog(
+        mealCategory: MealCategory?,
+        onRecipeSelected: (Recipe) -> Unit
+    ) {
+        val dialog = RecipeSuggestionDialogFragment.newInstance(mealCategory, onRecipeSelected)
+        dialog.show(parentFragmentManager, "recipe_suggestion")
     }
 
     private fun showPhotoSourceDialog() {

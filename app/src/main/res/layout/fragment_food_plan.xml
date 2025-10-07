@@ -95,61 +95,157 @@
                     android:orientation="vertical"
                     android:padding="16dp">
 
-                    <com.google.android.material.textfield.TextInputLayout
+                    <!-- Breakfast with Get Ideas button -->
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:orientation="horizontal"
                         android:layout_marginBottom="8dp"
-                        android:hint="@string/breakfast"
-                        style="@style/Widget.Material3.TextInputLayout.OutlinedBox">
+                        android:gravity="center_vertical">
 
-                        <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/etMondayBreakfast"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content" />
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="@string/breakfast"
+                            android:layout_marginEnd="8dp"
+                            style="@style/Widget.Material3.TextInputLayout.OutlinedBox">
 
-                    </com.google.android.material.textfield.TextInputLayout>
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/etMondayBreakfast"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
 
-                    <com.google.android.material.textfield.TextInputLayout
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnMondayBreakfastIdeas"
+                            style="@style/Widget.Material3.Button.TextButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Get Ideas"
+                            android:textSize="12sp"
+                            android:textColor="@color/mint_green"
+                            android:drawableStart="@drawable/ic_lightbulb"
+                            android:drawableTint="@color/mint_green"
+                            android:minWidth="0dp"
+                            android:paddingHorizontal="8dp" />
+
+                    </LinearLayout>
+
+                    <!-- Lunch with Get Ideas button -->
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:orientation="horizontal"
                         android:layout_marginBottom="8dp"
-                        android:hint="@string/lunch"
-                        style="@style/Widget.Material3.TextInputLayout.OutlinedBox">
+                        android:gravity="center_vertical">
 
-                        <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/etMondayLunch"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content" />
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="@string/lunch"
+                            android:layout_marginEnd="8dp"
+                            style="@style/Widget.Material3.TextInputLayout.OutlinedBox">
 
-                    </com.google.android.material.textfield.TextInputLayout>
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/etMondayLunch"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
 
-                    <com.google.android.material.textfield.TextInputLayout
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnMondayLunchIdeas"
+                            style="@style/Widget.Material3.Button.TextButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Get Ideas"
+                            android:textSize="12sp"
+                            android:textColor="@color/mint_green"
+                            android:drawableStart="@drawable/ic_lightbulb"
+                            android:drawableTint="@color/mint_green"
+                            android:minWidth="0dp"
+                            android:paddingHorizontal="8dp" />
+
+                    </LinearLayout>
+
+                    <!-- Dinner with Get Ideas button -->
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:orientation="horizontal"
                         android:layout_marginBottom="8dp"
-                        android:hint="@string/dinner"
-                        style="@style/Widget.Material3.TextInputLayout.OutlinedBox">
+                        android:gravity="center_vertical">
 
-                        <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/etMondayDinner"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content" />
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="@string/dinner"
+                            android:layout_marginEnd="8dp"
+                            style="@style/Widget.Material3.TextInputLayout.OutlinedBox">
 
-                    </com.google.android.material.textfield.TextInputLayout>
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/etMondayDinner"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
 
-                    <com.google.android.material.textfield.TextInputLayout
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnMondayDinnerIdeas"
+                            style="@style/Widget.Material3.Button.TextButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Get Ideas"
+                            android:textSize="12sp"
+                            android:textColor="@color/mint_green"
+                            android:drawableStart="@drawable/ic_lightbulb"
+                            android:drawableTint="@color/mint_green"
+                            android:minWidth="0dp"
+                            android:paddingHorizontal="8dp" />
+
+                    </LinearLayout>
+
+                    <!-- Snacks with Get Ideas button -->
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:orientation="horizontal"
                         android:layout_marginBottom="8dp"
-                        android:hint="@string/snacks_kids"
-                        style="@style/Widget.Material3.TextInputLayout.OutlinedBox">
+                        android:gravity="center_vertical">
 
-                        <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/etMondaySnacks"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content" />
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="@string/snacks_kids"
+                            android:layout_marginEnd="8dp"
+                            style="@style/Widget.Material3.TextInputLayout.OutlinedBox">
 
-                    </com.google.android.material.textfield.TextInputLayout>
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/etMondaySnacks"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnMondaySnacksIdeas"
+                            style="@style/Widget.Material3.Button.TextButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Get Ideas"
+                            android:textSize="12sp"
+                            android:textColor="@color/mint_green"
+                            android:drawableStart="@drawable/ic_lightbulb"
+                            android:drawableTint="@color/mint_green"
+                            android:minWidth="0dp"
+                            android:paddingHorizontal="8dp" />
+
+                    </LinearLayout>
 
                     <com.google.android.material.textfield.TextInputLayout
                         android:layout_width="match_parent"
@@ -245,61 +341,157 @@
                     android:orientation="vertical"
                     android:padding="16dp">
 
-                    <com.google.android.material.textfield.TextInputLayout
+                    <!-- Breakfast with Get Ideas button -->
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:orientation="horizontal"
                         android:layout_marginBottom="8dp"
-                        android:hint="@string/breakfast"
-                        style="@style/Widget.Material3.TextInputLayout.OutlinedBox">
+                        android:gravity="center_vertical">
 
-                        <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/etTuesdayBreakfast"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content" />
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="@string/breakfast"
+                            android:layout_marginEnd="8dp"
+                            style="@style/Widget.Material3.TextInputLayout.OutlinedBox">
 
-                    </com.google.android.material.textfield.TextInputLayout>
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/etTuesdayBreakfast"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
 
-                    <com.google.android.material.textfield.TextInputLayout
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnTuesdayBreakfastIdeas"
+                            style="@style/Widget.Material3.Button.TextButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Get Ideas"
+                            android:textSize="12sp"
+                            android:textColor="@color/mint_green"
+                            android:drawableStart="@drawable/ic_lightbulb"
+                            android:drawableTint="@color/mint_green"
+                            android:minWidth="0dp"
+                            android:paddingHorizontal="8dp" />
+
+                    </LinearLayout>
+
+                    <!-- Lunch with Get Ideas button -->
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:orientation="horizontal"
                         android:layout_marginBottom="8dp"
-                        android:hint="@string/lunch"
-                        style="@style/Widget.Material3.TextInputLayout.OutlinedBox">
+                        android:gravity="center_vertical">
 
-                        <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/etTuesdayLunch"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content" />
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="@string/lunch"
+                            android:layout_marginEnd="8dp"
+                            style="@style/Widget.Material3.TextInputLayout.OutlinedBox">
 
-                    </com.google.android.material.textfield.TextInputLayout>
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/etTuesdayLunch"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
 
-                    <com.google.android.material.textfield.TextInputLayout
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnTuesdayLunchIdeas"
+                            style="@style/Widget.Material3.Button.TextButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Get Ideas"
+                            android:textSize="12sp"
+                            android:textColor="@color/mint_green"
+                            android:drawableStart="@drawable/ic_lightbulb"
+                            android:drawableTint="@color/mint_green"
+                            android:minWidth="0dp"
+                            android:paddingHorizontal="8dp" />
+
+                    </LinearLayout>
+
+                    <!-- Dinner with Get Ideas button -->
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:orientation="horizontal"
                         android:layout_marginBottom="8dp"
-                        android:hint="@string/dinner"
-                        style="@style/Widget.Material3.TextInputLayout.OutlinedBox">
+                        android:gravity="center_vertical">
 
-                        <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/etTuesdayDinner"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content" />
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="@string/dinner"
+                            android:layout_marginEnd="8dp"
+                            style="@style/Widget.Material3.TextInputLayout.OutlinedBox">
 
-                    </com.google.android.material.textfield.TextInputLayout>
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/etTuesdayDinner"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
 
-                    <com.google.android.material.textfield.TextInputLayout
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnTuesdayDinnerIdeas"
+                            style="@style/Widget.Material3.Button.TextButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Get Ideas"
+                            android:textSize="12sp"
+                            android:textColor="@color/mint_green"
+                            android:drawableStart="@drawable/ic_lightbulb"
+                            android:drawableTint="@color/mint_green"
+                            android:minWidth="0dp"
+                            android:paddingHorizontal="8dp" />
+
+                    </LinearLayout>
+
+                    <!-- Snacks with Get Ideas button -->
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:orientation="horizontal"
                         android:layout_marginBottom="8dp"
-                        android:hint="@string/snacks_kids"
-                        style="@style/Widget.Material3.TextInputLayout.OutlinedBox">
+                        android:gravity="center_vertical">
 
-                        <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/etTuesdaySnacks"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content" />
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="@string/snacks_kids"
+                            android:layout_marginEnd="8dp"
+                            style="@style/Widget.Material3.TextInputLayout.OutlinedBox">
 
-                    </com.google.android.material.textfield.TextInputLayout>
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/etTuesdaySnacks"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnTuesdaySnacksIdeas"
+                            style="@style/Widget.Material3.Button.TextButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Get Ideas"
+                            android:textSize="12sp"
+                            android:textColor="@color/mint_green"
+                            android:drawableStart="@drawable/ic_lightbulb"
+                            android:drawableTint="@color/mint_green"
+                            android:minWidth="0dp"
+                            android:paddingHorizontal="8dp" />
+
+                    </LinearLayout>
 
                     <com.google.android.material.textfield.TextInputLayout
                         android:layout_width="match_parent"
@@ -395,61 +587,157 @@
                     android:orientation="vertical"
                     android:padding="16dp">
 
-                    <com.google.android.material.textfield.TextInputLayout
+                    <!-- Breakfast with Get Ideas button -->
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:orientation="horizontal"
                         android:layout_marginBottom="8dp"
-                        android:hint="@string/breakfast"
-                        style="@style/Widget.Material3.TextInputLayout.OutlinedBox">
+                        android:gravity="center_vertical">
 
-                        <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/etWednesdayBreakfast"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content" />
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="@string/breakfast"
+                            android:layout_marginEnd="8dp"
+                            style="@style/Widget.Material3.TextInputLayout.OutlinedBox">
 
-                    </com.google.android.material.textfield.TextInputLayout>
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/etWednesdayBreakfast"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
 
-                    <com.google.android.material.textfield.TextInputLayout
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnWednesdayBreakfastIdeas"
+                            style="@style/Widget.Material3.Button.TextButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Get Ideas"
+                            android:textSize="12sp"
+                            android:textColor="@color/mint_green"
+                            android:drawableStart="@drawable/ic_lightbulb"
+                            android:drawableTint="@color/mint_green"
+                            android:minWidth="0dp"
+                            android:paddingHorizontal="8dp" />
+
+                    </LinearLayout>
+
+                    <!-- Lunch with Get Ideas button -->
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:orientation="horizontal"
                         android:layout_marginBottom="8dp"
-                        android:hint="@string/lunch"
-                        style="@style/Widget.Material3.TextInputLayout.OutlinedBox">
+                        android:gravity="center_vertical">
 
-                        <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/etWednesdayLunch"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content" />
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="@string/lunch"
+                            android:layout_marginEnd="8dp"
+                            style="@style/Widget.Material3.TextInputLayout.OutlinedBox">
 
-                    </com.google.android.material.textfield.TextInputLayout>
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/etWednesdayLunch"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
 
-                    <com.google.android.material.textfield.TextInputLayout
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnWednesdayLunchIdeas"
+                            style="@style/Widget.Material3.Button.TextButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Get Ideas"
+                            android:textSize="12sp"
+                            android:textColor="@color/mint_green"
+                            android:drawableStart="@drawable/ic_lightbulb"
+                            android:drawableTint="@color/mint_green"
+                            android:minWidth="0dp"
+                            android:paddingHorizontal="8dp" />
+
+                    </LinearLayout>
+
+                    <!-- Dinner with Get Ideas button -->
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:orientation="horizontal"
                         android:layout_marginBottom="8dp"
-                        android:hint="@string/dinner"
-                        style="@style/Widget.Material3.TextInputLayout.OutlinedBox">
+                        android:gravity="center_vertical">
 
-                        <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/etWednesdayDinner"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content" />
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="@string/dinner"
+                            android:layout_marginEnd="8dp"
+                            style="@style/Widget.Material3.TextInputLayout.OutlinedBox">
 
-                    </com.google.android.material.textfield.TextInputLayout>
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/etWednesdayDinner"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
 
-                    <com.google.android.material.textfield.TextInputLayout
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnWednesdayDinnerIdeas"
+                            style="@style/Widget.Material3.Button.TextButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Get Ideas"
+                            android:textSize="12sp"
+                            android:textColor="@color/mint_green"
+                            android:drawableStart="@drawable/ic_lightbulb"
+                            android:drawableTint="@color/mint_green"
+                            android:minWidth="0dp"
+                            android:paddingHorizontal="8dp" />
+
+                    </LinearLayout>
+
+                    <!-- Snacks with Get Ideas button -->
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:orientation="horizontal"
                         android:layout_marginBottom="8dp"
-                        android:hint="@string/snacks_kids"
-                        style="@style/Widget.Material3.TextInputLayout.OutlinedBox">
+                        android:gravity="center_vertical">
 
-                        <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/etWednesdaySnacks"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content" />
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="@string/snacks_kids"
+                            android:layout_marginEnd="8dp"
+                            style="@style/Widget.Material3.TextInputLayout.OutlinedBox">
 
-                    </com.google.android.material.textfield.TextInputLayout>
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/etWednesdaySnacks"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnWednesdaySnacksIdeas"
+                            style="@style/Widget.Material3.Button.TextButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Get Ideas"
+                            android:textSize="12sp"
+                            android:textColor="@color/mint_green"
+                            android:drawableStart="@drawable/ic_lightbulb"
+                            android:drawableTint="@color/mint_green"
+                            android:minWidth="0dp"
+                            android:paddingHorizontal="8dp" />
+
+                    </LinearLayout>
 
                     <com.google.android.material.textfield.TextInputLayout
                         android:layout_width="match_parent"
@@ -545,53 +833,149 @@
                     android:orientation="vertical"
                     android:padding="16dp">
 
-                    <com.google.android.material.textfield.TextInputLayout
+                    <!-- Breakfast with Get Ideas button -->
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:orientation="horizontal"
                         android:layout_marginBottom="8dp"
-                        android:hint="@string/breakfast"
-                        style="@style/Widget.Material3.TextInputLayout.OutlinedBox">
+                        android:gravity="center_vertical">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="@string/breakfast"
+                            android:layout_marginEnd="8dp"
+                            style="@style/Widget.Material3.TextInputLayout.OutlinedBox">
                         <com.google.android.material.textfield.TextInputEditText
                             android:id="@+id/etThursdayBreakfast"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content" />
                     </com.google.android.material.textfield.TextInputLayout>
 
-                    <com.google.android.material.textfield.TextInputLayout
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnThursdayBreakfastIdeas"
+                            style="@style/Widget.Material3.Button.TextButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Get Ideas"
+                            android:textSize="12sp"
+                            android:textColor="@color/mint_green"
+                            android:drawableStart="@drawable/ic_lightbulb"
+                            android:drawableTint="@color/mint_green"
+                            android:minWidth="0dp"
+                            android:paddingHorizontal="8dp" />
+
+                    </LinearLayout>
+
+                    <!-- Lunch with Get Ideas button -->
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:orientation="horizontal"
                         android:layout_marginBottom="8dp"
-                        android:hint="@string/lunch"
-                        style="@style/Widget.Material3.TextInputLayout.OutlinedBox">
+                        android:gravity="center_vertical">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="@string/lunch"
+                            android:layout_marginEnd="8dp"
+                            style="@style/Widget.Material3.TextInputLayout.OutlinedBox">
                         <com.google.android.material.textfield.TextInputEditText
                             android:id="@+id/etThursdayLunch"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content" />
                     </com.google.android.material.textfield.TextInputLayout>
 
-                    <com.google.android.material.textfield.TextInputLayout
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnThursdayLunchIdeas"
+                            style="@style/Widget.Material3.Button.TextButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Get Ideas"
+                            android:textSize="12sp"
+                            android:textColor="@color/mint_green"
+                            android:drawableStart="@drawable/ic_lightbulb"
+                            android:drawableTint="@color/mint_green"
+                            android:minWidth="0dp"
+                            android:paddingHorizontal="8dp" />
+
+                    </LinearLayout>
+
+                    <!-- Dinner with Get Ideas button -->
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:orientation="horizontal"
                         android:layout_marginBottom="8dp"
-                        android:hint="@string/dinner"
-                        style="@style/Widget.Material3.TextInputLayout.OutlinedBox">
+                        android:gravity="center_vertical">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="@string/dinner"
+                            android:layout_marginEnd="8dp"
+                            style="@style/Widget.Material3.TextInputLayout.OutlinedBox">
                         <com.google.android.material.textfield.TextInputEditText
                             android:id="@+id/etThursdayDinner"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content" />
                     </com.google.android.material.textfield.TextInputLayout>
 
-                    <com.google.android.material.textfield.TextInputLayout
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnThursdayDinnerIdeas"
+                            style="@style/Widget.Material3.Button.TextButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Get Ideas"
+                            android:textSize="12sp"
+                            android:textColor="@color/mint_green"
+                            android:drawableStart="@drawable/ic_lightbulb"
+                            android:drawableTint="@color/mint_green"
+                            android:minWidth="0dp"
+                            android:paddingHorizontal="8dp" />
+
+                    </LinearLayout>
+
+                    <!-- Snacks with Get Ideas button -->
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:orientation="horizontal"
                         android:layout_marginBottom="8dp"
-                        android:hint="@string/snacks_kids"
-                        style="@style/Widget.Material3.TextInputLayout.OutlinedBox">
+                        android:gravity="center_vertical">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="@string/snacks_kids"
+                            android:layout_marginEnd="8dp"
+                            style="@style/Widget.Material3.TextInputLayout.OutlinedBox">
                         <com.google.android.material.textfield.TextInputEditText
                             android:id="@+id/etThursdaySnacks"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content" />
                     </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnThursdaySnacksIdeas"
+                            style="@style/Widget.Material3.Button.TextButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Get Ideas"
+                            android:textSize="12sp"
+                            android:textColor="@color/mint_green"
+                            android:drawableStart="@drawable/ic_lightbulb"
+                            android:drawableTint="@color/mint_green"
+                            android:minWidth="0dp"
+                            android:paddingHorizontal="8dp" />
+
+                    </LinearLayout>
 
                     <com.google.android.material.textfield.TextInputLayout
                         android:layout_width="match_parent"
@@ -599,11 +983,13 @@
                         android:layout_marginBottom="16dp"
                         android:hint="@string/notes"
                         style="@style/Widget.Material3.TextInputLayout.OutlinedBox">
+
                         <com.google.android.material.textfield.TextInputEditText
                             android:id="@+id/etThursdayNotes"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:maxLines="2" />
+
                     </com.google.android.material.textfield.TextInputLayout>
 
                     <!-- Photo section -->
@@ -613,6 +999,7 @@
                         android:orientation="horizontal"
                         android:gravity="center_vertical"
                         android:layout_marginBottom="8dp">
+
                         <TextView
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -621,6 +1008,7 @@
                             android:textSize="14sp"
                             android:textStyle="bold"
                             android:textColor="@color/gray_700" />
+
                         <TextView
                             android:id="@+id/tvThursdayPhotoCount"
                             android:layout_width="wrap_content"
@@ -630,6 +1018,7 @@
                             android:textColor="@color/gray_500"
                             android:layout_marginEnd="8dp"
                             android:visibility="gone" />
+
                         <com.google.android.material.button.MaterialButton
                             android:id="@+id/btnThursdayAddPhoto"
                             style="@style/Widget.Material3.Button.TextButton.Icon"
@@ -641,6 +1030,7 @@
                             app:icon="@drawable/ic_photo"
                             app:iconSize="16dp"
                             app:iconTint="@color/primary" />
+
                     </LinearLayout>
 
                     <!-- Photo grid -->
@@ -675,61 +1065,157 @@
                     android:orientation="vertical"
                     android:padding="16dp">
 
-                    <com.google.android.material.textfield.TextInputLayout
+                    <!-- Breakfast with Get Ideas button -->
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:orientation="horizontal"
                         android:layout_marginBottom="8dp"
-                        android:hint="@string/breakfast"
-                        style="@style/Widget.Material3.TextInputLayout.OutlinedBox">
+                        android:gravity="center_vertical">
 
-                        <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/etFridayBreakfast"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content" />
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="@string/breakfast"
+                            android:layout_marginEnd="8dp"
+                            style="@style/Widget.Material3.TextInputLayout.OutlinedBox">
 
-                    </com.google.android.material.textfield.TextInputLayout>
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/etFridayBreakfast"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
 
-                    <com.google.android.material.textfield.TextInputLayout
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnFridayBreakfastIdeas"
+                            style="@style/Widget.Material3.Button.TextButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Get Ideas"
+                            android:textSize="12sp"
+                            android:textColor="@color/mint_green"
+                            android:drawableStart="@drawable/ic_lightbulb"
+                            android:drawableTint="@color/mint_green"
+                            android:minWidth="0dp"
+                            android:paddingHorizontal="8dp" />
+
+                    </LinearLayout>
+
+                    <!-- Lunch with Get Ideas button -->
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:orientation="horizontal"
                         android:layout_marginBottom="8dp"
-                        android:hint="@string/lunch"
-                        style="@style/Widget.Material3.TextInputLayout.OutlinedBox">
+                        android:gravity="center_vertical">
 
-                        <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/etFridayLunch"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content" />
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="@string/lunch"
+                            android:layout_marginEnd="8dp"
+                            style="@style/Widget.Material3.TextInputLayout.OutlinedBox">
 
-                    </com.google.android.material.textfield.TextInputLayout>
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/etFridayLunch"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
 
-                    <com.google.android.material.textfield.TextInputLayout
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnFridayLunchIdeas"
+                            style="@style/Widget.Material3.Button.TextButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Get Ideas"
+                            android:textSize="12sp"
+                            android:textColor="@color/mint_green"
+                            android:drawableStart="@drawable/ic_lightbulb"
+                            android:drawableTint="@color/mint_green"
+                            android:minWidth="0dp"
+                            android:paddingHorizontal="8dp" />
+
+                    </LinearLayout>
+
+                    <!-- Dinner with Get Ideas button -->
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:orientation="horizontal"
                         android:layout_marginBottom="8dp"
-                        android:hint="@string/dinner"
-                        style="@style/Widget.Material3.TextInputLayout.OutlinedBox">
+                        android:gravity="center_vertical">
 
-                        <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/etFridayDinner"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content" />
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="@string/dinner"
+                            android:layout_marginEnd="8dp"
+                            style="@style/Widget.Material3.TextInputLayout.OutlinedBox">
 
-                    </com.google.android.material.textfield.TextInputLayout>
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/etFridayDinner"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
 
-                    <com.google.android.material.textfield.TextInputLayout
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnFridayDinnerIdeas"
+                            style="@style/Widget.Material3.Button.TextButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Get Ideas"
+                            android:textSize="12sp"
+                            android:textColor="@color/mint_green"
+                            android:drawableStart="@drawable/ic_lightbulb"
+                            android:drawableTint="@color/mint_green"
+                            android:minWidth="0dp"
+                            android:paddingHorizontal="8dp" />
+
+                    </LinearLayout>
+
+                    <!-- Snacks with Get Ideas button -->
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:orientation="horizontal"
                         android:layout_marginBottom="8dp"
-                        android:hint="@string/snacks_kids"
-                        style="@style/Widget.Material3.TextInputLayout.OutlinedBox">
+                        android:gravity="center_vertical">
 
-                        <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/etFridaySnacks"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content" />
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="@string/snacks_kids"
+                            android:layout_marginEnd="8dp"
+                            style="@style/Widget.Material3.TextInputLayout.OutlinedBox">
 
-                    </com.google.android.material.textfield.TextInputLayout>
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/etFridaySnacks"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnFridaySnacksIdeas"
+                            style="@style/Widget.Material3.Button.TextButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Get Ideas"
+                            android:textSize="12sp"
+                            android:textColor="@color/mint_green"
+                            android:drawableStart="@drawable/ic_lightbulb"
+                            android:drawableTint="@color/mint_green"
+                            android:minWidth="0dp"
+                            android:paddingHorizontal="8dp" />
+
+                    </LinearLayout>
 
                     <com.google.android.material.textfield.TextInputLayout
                         android:layout_width="match_parent"
